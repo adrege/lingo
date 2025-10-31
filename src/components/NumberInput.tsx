@@ -15,7 +15,7 @@ export function NumberInput(props: {
       max={props.max}
       placeholder={props.placeholder}
       onChange={(ev) => {
-        props.setInput(Number.parseInt(ev.target.value));
+        props.setInput(Number.parseInt(ev.target.value, 10));
       }}
       className="bg-wit shadow text-donkerderrood rounded p-2 m-2 w-16"
       style={{ boxShadow: innerShadow }}

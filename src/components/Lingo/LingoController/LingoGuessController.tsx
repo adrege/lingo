@@ -2,10 +2,10 @@ import { useCallback, useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import guessingMusicUrl from "../../../assets/guessing_music.ogg";
 import {
-  type Guesses,
   addBonusLetter,
   addColor,
   addRow,
+  type Guesses,
   isCorrect,
   isOutOfTries,
   newGuesses,

@@ -1,7 +1,7 @@
-import { innerShadow } from "..";
 import { Color, type Guesses } from "../../../utils/guesses";
 import { Box } from "../../Box";
 import { Title } from "../../Title";
+import { innerShadow } from "..";
 
 export function LingoGuessView(props: {
   guesses: Guesses;

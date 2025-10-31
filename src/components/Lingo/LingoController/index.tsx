@@ -43,9 +43,8 @@ export const LingoController = () => {
         <Multiselect
           selected={screen}
           setSelected={setScreen}
-          options={Object.values(Screen).reduce(
-            (acc, scr) => Object.assign(acc, { [scr]: scr }),
-            {},
+          options={Object.fromEntries(
+            Object.values(Screen).map((scr) => [scr, scr]),
           )}
         />
       </div>

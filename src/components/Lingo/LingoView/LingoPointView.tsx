@@ -13,9 +13,7 @@ export function LingoPointView(
     <Box>
       <Title text="Puntenstand" textSize="text-4xl" />
       {"points" in props ? (
-        <>
-          <span className="text-8xl">{props.points}</span>
-        </>
+        <span className="text-8xl">{props.points}</span>
       ) : (
         <div className="flex items-center justify-center">
           <div className="m-4">
