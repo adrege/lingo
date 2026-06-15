@@ -6,6 +6,6 @@ COPY . .
 RUN npm run check
 RUN npm run build
 
-FROM docker.io/nginx:1.29-alpine
+FROM docker.io/nginx:1.31-alpine
 COPY --from=builder /build/dist /usr/share/nginx/html
 EXPOSE 80
